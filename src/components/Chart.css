@@ -1,0 +1,40 @@
+.index {
+  display: flex;
+  cursor: pointer;
+  padding: 10px;
+  min-width: 170px;
+}
+.index:hover {
+  background-color: var(--main-bg);
+}
+.colorSegment {
+  width: 5px;
+  height: 10px;
+  margin: 0.5rem;
+}
+.index > .count {
+  margin-left: auto;
+}
+
+.resetBtn {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: var(--main-100);
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: var(--main-bg--dark);
+}
+.resetBtn:hover {
+  color: var(--main-bg--dark);
+  background-color: var(--main-bg);
+  border: 2px solid var(--main-bg--dark);
+}
+
+@media screen and (max-width: 980px) {
+  .resetBtn {
+    max-width: 100px;
+    height: 50px;
+  }
+}
